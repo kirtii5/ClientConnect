@@ -84,13 +84,11 @@ export default function Admin() {
 
   /* ===================== UI ===================== */
   return (
-    <div className="min-h-screen bg-[#f5f7fb] py-12 px-6">
+    <div className="min-h-screen bg-[#f2f5fc] py-12 px-6">
       <div className="max-w-7xl mx-auto space-y-14">
-        {/* HEADER */}
-        {/* HEADER */}
         <div className="flex items-center justify-between gap-4">
           <div>
-            <h1 className="text-3xl font-bold text-blue-900">
+            <h1 className="text-3xl font-bold text-blue-700">
               Admin Dashboard
             </h1>
             <p className="text-sm text-gray-500 mt-1">

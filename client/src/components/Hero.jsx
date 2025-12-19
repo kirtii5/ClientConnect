@@ -32,7 +32,7 @@ export default function Hero() {
     <section className="relative w-full">
       {/* Background */}
       <div
-        id="Contact"
+        id="Home"
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage:
@@ -62,7 +62,7 @@ export default function Hero() {
             Get a Free Consultation
           </h3>
 
-          <form onSubmit={handleSubmit} className="space-y-3">
+          <form id="Contact" onSubmit={handleSubmit} className="space-y-3">
             <input
               className="w-full px-3 py-2 text-sm text-black"
               placeholder="Full Name"
