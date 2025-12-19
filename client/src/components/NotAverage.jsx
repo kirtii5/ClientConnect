@@ -1,7 +1,7 @@
 export default function NotAverage() {
   return (
-    <section className="py-20 bg-gray-50 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+    <section className="py-20 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
         {/* LEFT CONTENT */}
         <div className="text-center lg:text-left">
           <h2 className="text-2xl sm:text-3xl font-bold text-blue-600 mb-4">
@@ -15,33 +15,37 @@ export default function NotAverage() {
           </p>
         </div>
 
-        {/* RIGHT IMAGES */}
-        <div className="relative flex justify-center lg:justify-end">
-          {/* BIG CENTER IMAGE */}
-          <div className="w-56 h-56 sm:w-64 sm:h-64 rounded-full overflow-hidden shadow-lg z-10">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz1Imcz-gi8cyJUMYUhMFtxDN80NzeSfUdHg&s"
-              className="w-full h-full object-cover"
-              alt=""
-            />
-          </div>
+        {/* RIGHT IMAGE CLUSTER */}
+        <div className="flex justify-center lg:justify-end">
+          <div className="relative w-[320px] h-[320px]">
+            {/* CENTER IMAGE */}
+            <div className="absolute inset-0 flex items-center justify-center z-10">
+              <div className="w-56 h-56 rounded-full overflow-hidden shadow-lg">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz1Imcz-gi8cyJUMYUhMFtxDN80NzeSfUdHg&s"
+                  className="w-full h-full object-cover"
+                  alt=""
+                />
+              </div>
+            </div>
 
-          {/* TOP RIGHT */}
-          <div className="hidden sm:block absolute -top-10 right-0 w-36 h-36 rounded-full overflow-hidden shadow">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJu11qVL9BvpbC0DQfQKA0H4mE4hcLJiT-aA&s"
-              className="w-full h-full object-cover"
-              alt=""
-            />
-          </div>
+            {/* TOP RIGHT */}
+            <div className="absolute top-0 right-0 w-32 h-32 rounded-full overflow-hidden shadow">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJu11qVL9BvpbC0DQfQKA0H4mE4hcLJiT-aA&s"
+                className="w-full h-full object-cover"
+                alt=""
+              />
+            </div>
 
-          {/* BOTTOM LEFT */}
-          <div className="hidden sm:block absolute bottom-0 -left-10 w-32 h-32 rounded-full overflow-hidden shadow">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0MSLog4233qWpgUmPwNNewh_uHVzDIml1og&s"
-              className="w-full h-full object-cover"
-              alt=""
-            />
+            {/* BOTTOM LEFT */}
+            <div className="absolute bottom-0 left-0 w-28 h-28 rounded-full overflow-hidden shadow">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0MSLog4233qWpgUmPwNNewh_uHVzDIml1og&s"
+                className="w-full h-full object-cover"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>
